@@ -3,7 +3,7 @@ import Button from 'primevue/button';
 </script>
 
 <template>
-  <h1>Shumys kz</h1>
+  <h1>Shumys.kz Frontend</h1>
   <Button label="Click" />
 </template>
 

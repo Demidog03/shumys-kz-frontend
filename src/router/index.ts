@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AppLayout from '@/layouts/AppLayout.vue'
 import PageView from '@/views/PageView.vue'
+import MyJobsView from '@/views/MyJobsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,15 +14,14 @@ const router = createRouter({
           path: 'find-work',
           name: 'find-work',
           component: PageView,
-          meta: { title: 'Find Work' },
+          meta: { title: 'find-work' },
         },
         {
           path: 'my-jobs',
           name: 'my-jobs',
-          component: PageView,
-          meta: { title: 'My Jobs' },
+          component: MyJobsView,
+          meta: { title: 'my-jobs' },
         },
-        
       ],
     },
   ],

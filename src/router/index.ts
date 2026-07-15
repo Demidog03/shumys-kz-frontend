@@ -10,12 +10,6 @@ const router = createRouter({
       component: AppLayout,
       children: [
         {
-          path: '',
-          name: 'home',
-          component: PageView,
-          meta: { title: 'Home' },
-        },
-        {
           path: 'find-work',
           name: 'find-work',
           component: PageView,
@@ -27,24 +21,7 @@ const router = createRouter({
           component: PageView,
           meta: { title: 'My Jobs' },
         },
-        {
-          path: 'my-activity',
-          name: 'my-activity',
-          component: PageView,
-          meta: { title: 'My Activity' },
-        },
-        {
-          path: 'messages',
-          name: 'messages',
-          component: PageView,
-          meta: { title: 'Messages' },
-        },
-        {
-          path: 'reports',
-          name: 'reports',
-          component: PageView,
-          meta: { title: 'Reports' },
-        },
+        
       ],
     },
   ],

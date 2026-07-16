@@ -1,21 +1,30 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { ref } from 'vue'
+import JobsResultsHeader from '@/components/JobsResultsHeader.vue'
 
-const route = useRoute()
-const title = route.meta.title as string
+const activeTab = ref('popular')
+const activeSort = ref('newest')
+
+function changeTab(tab: string) {activeTab.value = tab}
+function changeSort(sort: string) {activeSort.value = sort}
+
 </script>
-
 <template>
   <div class="page">
-    <h1 class="page__title">{{ title }}</h1>
+    <JobsResultsHeader
+      @change-tab="changeTab"
+      @change-sort="changeSort" />
+    <div class="jobs-list">
+    </div>
   </div>
 </template>
 
 <style scoped>
-.page__title {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 600;
-  color: #111827;
+.page {
+  width: 100%;
+}
+
+.jobs-list {
+  padding: 24px 16px;
 }
 </style>

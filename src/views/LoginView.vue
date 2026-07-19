@@ -61,7 +61,7 @@ import Button from 'primevue/button'
         <InputText id="email" placeholder="you@example.com" />
 
         <label for="password" class="text">Password</label>
-        <Password id="password" placeholder="••••••••" toggleMask/>
+        <Password id="password" placeholder="••••••••" toggleMask />
 
         <div class="row">
           <Checkbox inputId="remember" binary />
@@ -84,16 +84,17 @@ import Button from 'primevue/button'
 .login-page {
   display: flex;
   min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-side {
   width: 563.41px;
   height: 720px;
-  background-image: url('@/assets/images/logo-img.png');
-  background-size: 563.41px 720px;
+  background: #6366f1;
   color: white;
   padding: 40px;
-  border-radius: 16px;
+  border-radius: 16px 0 0 16px;
   position: relative;
   overflow: hidden;
 }
@@ -126,7 +127,7 @@ import Button from 'primevue/button'
   margin-left: 44px;
   font-size: 26px;
   font-weight: bold;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .hero-text {
   max-width: 476px;
@@ -135,7 +136,7 @@ import Button from 'primevue/button'
   margin-bottom: 197.8px;
 }
 .hero-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 38px;
   line-height: 43.7px;
@@ -143,7 +144,7 @@ import Button from 'primevue/button'
   margin: 0;
 }
 .hero-subtitle {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -184,21 +185,21 @@ import Button from 'primevue/button'
 }
 
 .icon-letter {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #4285f4;
   font-weight: 700;
   font-size: 20px;
 }
 
 .company {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 14px;
   margin: 0;
 }
 
 .role {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #8a90a6;
@@ -206,7 +207,7 @@ import Button from 'primevue/button'
 }
 
 .salary {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 13px;
   margin-left: auto;
@@ -214,15 +215,18 @@ import Button from 'primevue/button'
 }
 
 .right-side {
-  width: 536.59px;
+  max-width: 563.41px;
   height: 720px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 16px;
+  align-items: center;
+  border-radius: 0 16px 16px 0;
   box-shadow: 0 4px 20px gray;
   background: white;
+  text-align: left;
+  gap: 24px;
 }
 
 .tabs {
@@ -242,7 +246,7 @@ import Button from 'primevue/button'
   border: none;
   border-radius: 999px;
   background: transparent;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #9ca3af;
@@ -256,22 +260,23 @@ import Button from 'primevue/button'
   box-shadow: 0 4px 12px rgba(50, 40, 120, 0.12);
 }
 .welcome-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #1f2333;
   font-weight: 700;
   font-size: 28px;
   margin: 0;
+  text-align: left;
 }
 .welcome-subtitle {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   width: 432.59px;
   font-weight: 400;
   font-size: 15px;
   color: #8a90a6;
   margin-top: 4px;
   margin-bottom: 28px;
+  text-align: left;
 }
-
 
 :deep(.p-inputtext) {
   width: 100%;
@@ -280,7 +285,7 @@ import Button from 'primevue/button'
   border: 0.8px solid #eceef5;
   background: #f7f8fc;
   padding: 0 16px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -296,24 +301,25 @@ import Button from 'primevue/button'
   border: 0.8px solid #eceef5;
   background: #f7f8fc;
   padding: 0 16px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   box-sizing: border-box;
 }
 form {
   display: flex;
   flex-direction: column;
-  gap: 24.8px;
+  gap: 16.8px;
+  width: 100%;
   max-width: 424.59px;
 }
 
 .text {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #5b6172;
   line-height: 120%;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   display: block;
 }
 
@@ -321,7 +327,7 @@ form {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
 }
 
@@ -338,14 +344,14 @@ form {
   border: none;
   border-radius: 12px;
   color: white;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
 
 .bottom-text {
   text-align: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: #6b7280;
 }
@@ -354,5 +360,60 @@ form {
   color: #6366f1;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .login-page {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    max-width: 536px;
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .left-side,
+  .right-side {
+    padding: 32px 24px;
+  }
+
+  .job-card {
+    flex-wrap: wrap;
+  }
+
+  .salary {
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  .logo,
+  .hero-text,
+  .job-conteiner {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 </style>

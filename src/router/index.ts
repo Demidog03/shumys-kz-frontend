@@ -8,6 +8,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/login',
+      name: 'login',
+      component: LoginView,
+      meta: { title: 'login' },
+    },
+    {
       path: '/',
       component: AppLayout,
       children: [
@@ -22,12 +28,6 @@ const router = createRouter({
           name: 'my-jobs',
           component: MyJobsView,
           meta: { title: 'my-jobs' },
-        },
-        {
-          path: 'login',
-          name: 'login',
-          component: LoginView,
-          meta: { title: 'login' },
         },
       ],
     },

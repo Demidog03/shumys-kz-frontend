@@ -5,7 +5,8 @@ import '@/assets/styles/global.css'
 import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config';
-import Aura from '@primeuix/themes/aura';
+import Aura from '@primeuix/themes/aura'
+import '@/assets/styles/auth-form.css'
 
 const app = createApp(App)
 

@@ -14,11 +14,7 @@ const isActive = computed(() => route.name === props.item.name)
 </script>
 
 <template>
-  <RouterLink
-    :to="{ name: item.name }"
-    class="nav-item"
-    :class="{ 'nav-item--active': isActive }"
-  >
+  <RouterLink :to="{ name: item.name }" class="nav-item" :class="{ 'nav-item--active': isActive }">
     <NavIcon :name="item.icon" />
     <span class="nav-item__label">{{ item.label }}</span>
   </RouterLink>

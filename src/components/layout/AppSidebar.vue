@@ -6,17 +6,12 @@ import UserProfileCard from './UserProfileCard.vue'
 
 <template>
   <aside class="sidebar">
-
     <div class="sidebar-logo">
       <span class="logo-text">Shumys<span class="logo-accent">.kz</span></span>
-   </div>
+    </div>
 
     <nav class="sidebar__nav">
-      <AppNavItem
-        v-for="item in navItems"
-        :key="item.name"
-        :item="item"
-      />
+      <AppNavItem v-for="item in navItems" :key="item.name" :item="item" />
     </nav>
 
     <div class="sidebar__footer">
@@ -27,7 +22,7 @@ import UserProfileCard from './UserProfileCard.vue'
 
 <style scoped>
 .sidebar-logo {
-  padding: 13px 0 12px 21px; 
+  padding: 13px 0 12px 21px;
 }
 
 .logo-text,
@@ -39,7 +34,7 @@ import UserProfileCard from './UserProfileCard.vue'
   letter-spacing: 0%;
 }
 .logo-text {
-  color: #5060FF;
+  color: #5060ff;
 }
 
 .logo-accent {
@@ -47,7 +42,7 @@ import UserProfileCard from './UserProfileCard.vue'
 }
 
 .sidebar {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   width: 260px;
   height: 100vh;

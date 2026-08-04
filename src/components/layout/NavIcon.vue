@@ -7,12 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <svg
-    class="nav-icon"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
+  <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path
       v-if="name === 'home'"
       d="M12 3.172 4 9.172V20a1 1 0 0 0 1 1h5v-6h4v6h5a1 1 0 0 0 1-1V9.172L12 3.172ZM11 21H7v-6h4v6Zm2 0v-6h4v6h-4ZM5 10.172 12 4.343l7 5.829V19h-3v-6H10v6H5v-8.828Z"
@@ -33,10 +28,7 @@ defineProps<{
       v-else-if="name === 'messages'"
       d="M6 4h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-4 3v-3H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v9h1.17L8 16.83V15h10V6H6Zm3 3h6v2H9V9Zm0 3h4v2H9v-2Z"
     />
-    <path
-      v-else-if="name === 'reports'"
-      d="M5 4h3v16H5V4Zm6 6h3v10h-3V10Zm6-4h3v14h-3V6Z"
-    />
+    <path v-else-if="name === 'reports'" d="M5 4h3v16H5V4Zm6 6h3v10h-3V10Zm6-4h3v14h-3V6Z" />
   </svg>
 </template>
 
